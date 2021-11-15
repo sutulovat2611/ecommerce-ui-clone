@@ -1,6 +1,6 @@
-import MainNavigation from "./components/MainNavigation";
-import SearchNavigation from "./components/SearchNavigation";
-import ClothesTypesNavigation from "./components/ClothesTypesNavigation";
+import MainNavigation from "./components/Navigation/MainNavigation";
+import SearchNavigation from "./components/Navigation/SearchNavigation";
+import ClothesTypesNavigation from "./components/Navigation/ClothesTypesNavigation";
 import {
   BrowserRouter as Router,
 } from "react-router-dom";

@@ -1,0 +1,19 @@
+.main-navbar {
+  height: 25px;
+  justify-content: end;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.nav-menu {
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+  width: 70vw;
+  justify-content: end;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+
