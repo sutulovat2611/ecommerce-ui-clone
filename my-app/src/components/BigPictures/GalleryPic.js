@@ -22,11 +22,41 @@ const style = {
      };
 
 const items = [
-  <img src= {pic1} onDragStart={handleDragStart} role="presentation" style={style} />,
-  <img src= {pic2} onDragStart={handleDragStart} role="presentation" style={style} />,
-  <img src= {pic3}  onDragStart={handleDragStart} role="presentation" style={style} />,
-  <img src= {pic4}  onDragStart={handleDragStart} role="presentation" style={style} />,
-  <img src= {pic5}  onDragStart={handleDragStart} role="presentation"  style={style} />,
+    <div class="container">
+        <img src= {pic1} onDragStart={handleDragStart} role="presentation" style={style} />
+        <div class="text-1">New Arrival</div>
+        <div class="text-2">Mini Dress</div>
+        <div class="text-3">SHOP NOW</div>
+    </div>,
+
+    <div class="container">
+        <img src= {pic2} onDragStart={handleDragStart} role="presentation" style={style} />,
+        <div class="text-1">New Arrival</div>
+        <div class="text-2">Maxi Dress</div>
+        <div class="text-3">SHOP NOW</div>
+    </div>,
+
+    <div class="container">
+         <img src= {pic3}  onDragStart={handleDragStart} role="presentation" style={style} />,
+        <div class="text-1">New Arrival</div>
+        <div class="text-2">Leather bag</div>
+        <div class="text-3">SHOP NOW</div>
+    </div>,
+
+    <div class="container">
+        <img src= {pic4}  onDragStart={handleDragStart} role="presentation" style={style} />,
+        <div class="text-1">New Arrival</div>
+        <div class="text-2">Heels</div>
+        <div class="text-3">SHOP NOW</div>
+    </div>,
+
+    <div class="container">
+        <img src= {pic5}  onDragStart={handleDragStart} role="presentation"  style={style} />,
+        <div class="text-1">New Arrival</div>
+        <div class="text-2">Yellow Bag</div>
+        <div class="text-3">SHOP NOW</div>
+    </div>,
+
 ];
 
 const Gallery = () => {

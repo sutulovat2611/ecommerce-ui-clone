@@ -1,11 +1,3 @@
-// .alice-carousel.__ssr
-
-// .alice-carousel__stage-item.__active
-
-
-// .alice-carousel__stage-item.__cloned
-// .alice-carousel__stage-item.__target
-
 .alice-carousel__next-btn-item{
     position: relative;
     left: 65px;
@@ -17,9 +9,37 @@
     bottom:41px;
 }
 
-// .alice-carousel__play-btn-item.__pause
 
-// .alice-carousel__dots-item.__active
-// .alice-carousel__dots-item.__custom
+/* Container holding the image and the text */
+.container {
+    height: auto;
+  }
+  
+  
+  .text-1 {
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    color: #7e7f81;
+    font-family: sans-serif, verdana;
+    font-size: 25px;
+  }
 
-// .alice-carousel__slide-info-item.__separator
+  .text-2 {
+    position: absolute;
+    top: 69%;
+    left: 80%;
+    color: black;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 40px;
+  }
+
+  .text-3 {
+    position: absolute;
+    top: 78%;
+    left: 80%;
+    color: #7b1dfe;
+    font-family: sans-serif, verdana;
+    font-size: 23px;
+    text-decoration: underline;
+  }
