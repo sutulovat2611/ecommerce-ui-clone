@@ -4,6 +4,8 @@ import MainNavigation from "./components/Navigation/MainNavigation";
 import SearchNavigation from "./components/Navigation/SearchNavigation";
 import ClothesTypesNavigation from "./components/Navigation/ClothesTypesNavigation";
 import GalleryPic from "./components/BigPictures/GalleryPic";
+import AllItems from "./components/Items/AllItems"
+import Layout from "./UI/Layout"
 
 import {
   BrowserRouter as Router,
@@ -17,6 +19,9 @@ function App() {
       <SearchNavigation/>
       <ClothesTypesNavigation/>
       <GalleryPic/>
+      <Layout>
+        <AllItems/>
+      </Layout>
     </Router>
   );
 }
