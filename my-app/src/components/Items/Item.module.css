@@ -1,13 +1,12 @@
 .item {
-    margin: 1rem 0;
+    margin: 0%;
   }
   
   .image {
     width: 100%;
-    height: 20rem;
+    height: 60%;
     overflow: hidden;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
+    border-radius: 20px;
   }
   
   .image img {
@@ -20,7 +19,7 @@
     padding: 1rem;
   }
   
-  .content h3 {
+  .content h2 {
     font-size: 1.25rem;
     color: #2c292b;
   }
@@ -44,3 +43,22 @@
   .actions button:active {
     background-color: #ffe2ed;
   }
+
+  /* Style the button and place it in the middle of the container/image */
+.btn {
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: black;
+}

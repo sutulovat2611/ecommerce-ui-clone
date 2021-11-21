@@ -6,9 +6,10 @@ function Item(props){
             <li className={classes.item}>
                 <div className={classes.image}>
                     <img src={props.image} alt={props.title}/>
+                    <button class={classes.btn}>Button</button>
                 </div>
                 <div className={classes.content}>
-                    <h3>{props.title}</h3>
+                    <h2>{props.title}</h2>
                     <address>{props.address}</address>
                     <p>{props.description}</p>
                 </div>
