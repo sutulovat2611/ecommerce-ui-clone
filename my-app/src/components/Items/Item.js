@@ -1,7 +1,7 @@
 import classes from './Item.module.scss'
 import ItemCard from '../../UI/ItemCard'
 /* Icons */
-import { BsHeart } from "react-icons/bs";
+import { BsHeart, BsStar } from "react-icons/bs";
 function Item(props){
     return(
         <ItemCard>
@@ -18,12 +18,13 @@ function Item(props){
                         <p className={classes.old_price}>$5.99</p>
                     </div>
                 </div>
+                <div className={classes.choice}></div>
                 <div className={classes.actions}>
-                    <button>
-                        Star
+                    <button  className={classes.star}>
+                    <BsStar/> 4.6
                     </button>
-                    <button>
-                        Buy +
+                    <button className={classes.buy_btn}>
+                        BUY +
                     </button>
                 </div>
             </li>
