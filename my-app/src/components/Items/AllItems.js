@@ -6,7 +6,7 @@ import { BsLightningCharge } from "react-icons/bs";
  const DUMMY_DATA = [
     {
       id: 'm1',
-      title: 'This is a first meetup',
+      title: 'White Traditional Long Dress',
       image:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
       address: 'Meetupstreet 5, 12345 Meetup City',
@@ -15,7 +15,7 @@ import { BsLightningCharge } from "react-icons/bs";
     },
     {
       id: 'm2',
-      title: 'This is a second meetup',
+      title: 'Long Sleeve Denim Jacket',
       image:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
       address: 'Meetupstreet 5, 12345 Meetup City',
@@ -24,7 +24,7 @@ import { BsLightningCharge } from "react-icons/bs";
     },
     {
       id: 'm2',
-      title: 'This is a second meetup',
+      title: 'Hush Puppies',
       image:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
       address: 'Meetupstreet 5, 12345 Meetup City',
@@ -33,7 +33,7 @@ import { BsLightningCharge } from "react-icons/bs";
     },
     {
       id: 'm2',
-      title: 'This is a second meetup',
+      title: 'Athens Skirt',
       image:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
       address: 'Meetupstreet 5, 12345 Meetup City',
