@@ -18,7 +18,7 @@ $disabled-grey: #aaaaaa;
     object-fit: cover;
   }
   .content {
-    vertical-align: top;
+    height: 50%;
   }
   
   .btn_fav {
@@ -91,7 +91,7 @@ $disabled-grey: #aaaaaa;
 
   .actions {
     position:  absolute;
-    bottom: 35%;
+    bottom: 30%;
   }
   
   .actions button {
@@ -115,10 +115,89 @@ $disabled-grey: #aaaaaa;
     color: $disabled-grey;
     position: relative;
     font-size: 13px;
+    right:10px;
   }
 
   .actions button.buy_btn:hover,
   .actions button.buy_btn:active {
     font-size: 20px;
   }
+
+  .choice{
+    position:  absolute;
+    bottom: 38%;
+    left: 3%;
+    display: inline;
+  }
+
+  .color_choice, .size_choice{
+    display:inline-block;
+  }
+
+  
+  /* Hide the browser's default radio button */
+  .container_color input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark_color {
+    display:inline-block;
+    margin-left:5px;
+    margin-right: 5px;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container_color:hover input ~ .checkmark_color {
+    filter: brightness(50%);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container_color input:checked ~ .checkmark_color {
+    border:1px solid rgb(53, 51, 51);
+  }
+
+  .size_choice{
+    margin-left: 50px;
+  }
+
+  /* Hide the browser's default radio button */
+  .container_size input {
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark_size {
+    display:inline-block;
+    margin-left:-10px;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border:2px solid rgb(153, 152, 152);
+    border-radius: 50%;
+    color: rgb(153, 152, 152);
+    text-align: center;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container_size:hover input ~ .checkmark_size {
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container_size input:checked ~ .checkmark_size {
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+
+
 
