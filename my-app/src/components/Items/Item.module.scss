@@ -3,24 +3,21 @@ $secondary-color: #7b1dfe;
 $sale-color: #fc3c3d;
 $disabled-grey: #aaaaaa;
 
-.item{
-  position: relative;
-}
+  .item{
+    position: relative;
+    height: 500px;
+  }
 
   .image {
     overflow: hidden;
     border-radius: 20px;
-    height:50%;
   }
   
   .image img {
     width: 100%;
     object-fit: cover;
   }
-  .content {
-    height: 50%;
-  }
-  
+ 
   .btn_fav {
     // location
     position: sticky;
@@ -59,73 +56,46 @@ $disabled-grey: #aaaaaa;
     border-radius: 10px;
   }
 
-  .content h2 {
+  .content{
+    height:600px;
+  }
+
+  .title{
     font-size: 20px;
     color: #2c292b;
     word-wrap: break-word;
-    width: 170px;
+    width: 60%;
     position: relative;
     left: 5%;
-    display:inline-block;
-    margin-bottom: 300px;
     vertical-align: top;
+    display:inline-block;
   }
-  .content .prices{
+
+  .prices{
     display:inline-block;
     position: relative;
     left: 10%;
     text-align: right;
   }
   
-  .content .new_price{
+  .new_price{
     color: $sale-color;
     font-weight: bold;
     font-size: 20px;
   }
 
-  .content .old_price{
+   .old_price{
     color:$disabled-grey;
     position: relative;
     bottom: 20px;
   }
 
-  .actions {
-    position:  absolute;
-    bottom: 30%;
-  }
-  
-  .actions button {
-    font: inherit;
-    cursor: pointer;
-    border:none;
-    background-color: transparent;
-    padding: 0.5rem 1.5rem;
-    position: relative;
-    bottom: 5px;
-  }
 
-  .actions button.buy_btn{
-    font-weight: bold;
-    font-size: 18px;
-    left: 45%;
-    color: $secondary-color;
-  }
 
-  .actions button.star{
-    color: $disabled-grey;
-    position: relative;
-    font-size: 13px;
-    right:10px;
-  }
-
-  .actions button.buy_btn:hover,
-  .actions button.buy_btn:active {
-    font-size: 20px;
-  }
 
   .choice{
     position:  absolute;
-    bottom: 38%;
+    // bottom: 38%;
     left: 3%;
     display: inline;
   }
@@ -197,6 +167,48 @@ $disabled-grey: #aaaaaa;
     color: $secondary-color;
     border-color: $secondary-color;
   }
+
+
+
+
+
+
+  //actions
+  .actions {
+    position:  absolute;
+    bottom:10%
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    border:none;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .actions button.buy_btn{
+    font-weight: bold;
+    font-size: 18px;
+    left: 45%;
+    color: $secondary-color;
+  }
+
+  .actions button.star{
+    color: $disabled-grey;
+    position: relative;
+    font-size: 13px;
+    right:10px;
+  }
+
+  .actions button.buy_btn:hover,
+  .actions button.buy_btn:active {
+    font-size: 20px;
+  }
+
+  
 
 
 
