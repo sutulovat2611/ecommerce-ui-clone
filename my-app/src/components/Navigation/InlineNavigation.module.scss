@@ -1,0 +1,45 @@
+$primary-color: white;
+$secondary-color: #7b1dfe;
+$disabled-grey: #8a8888;
+
+
+  .options{
+    display:inline-block;
+    position: relative; 
+    left:5%;   
+  }
+
+  .header{
+    color: $secondary-color;
+    font-size: 18px;
+    text-align: right;
+    position: relative;
+    left: 72%;
+    display: inline-block;
+  }
+
+
+
+  .nav_item {
+    width: 70vw;
+    list-style:none;
+    display: inline;
+  }
+  
+
+  .nav_links_inline{
+    color: $disabled-grey;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem ;
+  }
+
+  .nav_links_inline:hover {
+    transition: all 0.2s ease-out;
+    text-decoration: underline;
+    text-decoration-color: $secondary-color;
+  }
+
+
+
+  

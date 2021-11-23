@@ -25,8 +25,6 @@ function ItemList(props){
         </Grid>
     </ul>
     )
-}
-
-      
+}  
 
 export default ItemList;

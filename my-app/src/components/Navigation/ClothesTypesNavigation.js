@@ -18,54 +18,54 @@ function ClothesTypesNavigation() {
           }
         >
           <li className="nav-item">
-            <Link to="/client-services" className="nav-links">
+            <Link to="/top" className="nav-links">
               Top
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/faq" className="nav-links">
+            <Link to="/bottom" className="nav-links">
               Bottom
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <Link to="/swim-wear" className="nav-links">
               Swim wear
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <Link to="/watch" className="nav-links">
               Watch
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <Link to="/shoes" className="nav-links">
               Shoes
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <Link to="/bag" className="nav-links">
               Bag
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <Link to="/accessories" className="nav-links">
               Accessories
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <Link to="/cosmetic" className="nav-links">
               Cosmetic
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <Link to="/muslim-wear" className="nav-links">
               Muslim Wear
             </Link>
           </li>
