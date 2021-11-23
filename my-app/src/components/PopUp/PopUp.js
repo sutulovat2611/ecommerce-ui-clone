@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./PopUp.scss";
 import { BsHeart, BsStar } from "react-icons/bs";
+import QuantityPicker from "./QuantityPicker";
 
 function PopUp(props) {
   let modelRef = useRef();
@@ -25,8 +26,17 @@ function PopUp(props) {
             </button>
           </div>
 
+          {/* Title */}
           <div className="title">{props.data.title}</div>
-          <div className="sku-brand"></div>
+
+          {/* Detailed info*/}
+          <div className="sku-brand">
+            <span className="inbuilt sku">SKU:  </span>
+            <span className="given-sku">{props.data.sku}</span>
+            <br />
+            <span className="inbuilt brand">Brand:  </span>
+            <span className="given-brand">{props.data.brand_name}</span>
+          </div>
 
           {/* Old and New price */}
           <div className="price">
@@ -64,7 +74,10 @@ function PopUp(props) {
           </div>
 
           {/* Quantity Choice */}
-          <div className="quantity"></div>
+          <div className="quantity">
+            <p>Quantity</p>
+            <QuantityPicker min={0} max={1000} />
+          </div>
 
           {/* Fav, Add to cart, Buy Buttons */}
           <div className="actions">

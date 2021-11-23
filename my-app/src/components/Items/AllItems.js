@@ -14,7 +14,9 @@ const DUMMY_DATA = [
     old_price: 5.99,
     colors: ["#f2e8e8", "#fe01b3", "#0091ff"],
     sizes: ["S", "M", "L"],
-    rating: 4.2
+    rating: 4.2,
+    sku: "00116c-23",
+    brand_name: "Brandname"
   },
 
   {
@@ -27,7 +29,9 @@ const DUMMY_DATA = [
     old_price: 5.99,
     colors: ["#5b6b84", "#293243"],
     sizes: ["S", "M", "L"],
-    rating: 4.3
+    rating: 4.3,
+    sku: "00116c-23",
+    brand_name: "Brandname"
   },
   {
     id: "m2",
@@ -39,7 +43,9 @@ const DUMMY_DATA = [
     old_price: 5.99,
     colors: ["#f2e8e8", "black", "#fc4b4b"],
     sizes: ["S", "M", "L"],
-    rating: 4.1
+    rating: 4.1,
+    sku: "00116c-23",
+    brand_name: "Brandname"
   },
   {
     id: "m2",
@@ -52,7 +58,9 @@ const DUMMY_DATA = [
 
     colors: ["#f2e8e8", "#fe01b3", "#0091ff"],
     sizes: ["S", "M", "L"],
-    rating: 4.9
+    rating: 4.9,
+    sku: "00116c-23",
+    brand_name: "Brandname"
   },
   {
     id: "m2",
@@ -64,7 +72,9 @@ const DUMMY_DATA = [
     old_price: 5.99,
     colors: ["#f2e8e8", "#fe01b3", "#0091ff"],
     sizes: ["S", "M", "L"],
-    rating: 4.4
+    rating: 4.4,
+    sku: "00116c-23",
+    brand_name: "Brandname"
   },
   {
     id: "m2",
@@ -76,7 +86,9 @@ const DUMMY_DATA = [
     old_price: 5.99,
     colors: ["#f2e8e8", "#fe01b3", "#0091ff"],
     sizes: ["S", "M", "L"],
-    rating: 2.4
+    rating: 2.4,
+    sku: "00116c-23",
+    brand_name: "Brandname"
   },
   {
     id: "m2",
@@ -88,7 +100,9 @@ const DUMMY_DATA = [
     old_price: 5.99,
     colors: ["#f2e8e8", "#fe01b3", "#0091ff"],
     sizes: ["S", "M", "L"],
-    rating: 4.2
+    rating: 4.2,
+    sku: "00116c-23",
+    brand_name: "Brandname"
   },
   {
     id: "m2",
@@ -100,7 +114,9 @@ const DUMMY_DATA = [
     old_price: 5.99,
     colors: ["#f2e8e8", "#fe01b3", "#0091ff"],
     sizes: ["S", "M", "L"],
-    rating: 4.2
+    rating: 4.2,
+    sku: "00116c-23",
+    brand_name: "Brandname"
   }
 ];
 

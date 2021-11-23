@@ -1,0 +1,68 @@
+$border-color: #e3e3e4;
+$background-color: #f7f8f9;
+
+
+.quantity-picker {
+    display: inline-block;
+    border:1px solid $border-color;
+    vertical-align: middle;
+    background-color: $background-color;
+    border-radius: 10px;
+  }
+
+  .quantity-display {
+    width: 138px;
+    padding: .4rem;
+    font-size: 1rem;
+    text-align: left;
+    height: 25px;
+  }
+
+  .quantity-input:focus {
+    background: red;
+  }
+  
+  .quantity-modifier,
+  .quantity-display {
+    // -webkit-user-select: none;
+    //    -moz-user-select: none;
+    //     -ms-user-select: none;
+    //         user-select: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .quantity-modifier {
+    border:1px solid $border-color;
+    width: 17%;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+  }
+
+  .modifier-left{
+    margin-right: 5px;
+  }
+  
+  .quantity-modifier:hover {
+    background: $background-color;
+  }
+  
+  .quantity-modifier:focus {
+    outline:0;
+  }
+  
+  .mod-disable {
+    color:#E0E0E0;
+  }
+  
+  .mod-disable:hover {
+    background-color: transparent !important;
+    color:#E0E0E0;
+  }
+  

@@ -20,6 +20,8 @@ function ItemList(props){
                 sizes={item.sizes}
                 title={item.title}
                 rating={item.rating}
+                sku={item.sku}
+                brand_name={item.brand_name}
             />
             </Grid>)}
         </Grid>
