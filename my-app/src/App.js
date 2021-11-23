@@ -7,6 +7,7 @@ import GalleryPic from "./components/BigPictures/GalleryPic";
 import AllItems from "./components/Items/AllItems"
 import AllVouchers from "./components/Vouchers/AllVouchers"
 import InlineNavigation from "./components/Navigation/InlineNavigation";
+import './App.scss'
 
 import {
   BrowserRouter as Router,
@@ -20,10 +21,12 @@ function App() {
     <SearchNavigation/>
     <ClothesTypesNavigation/>
     <GalleryPic/>
-    <AllItems/>
-    <AllVouchers/>
-    <InlineNavigation/>
-    <AllItems/>
+    <div className="main">
+      <AllItems/>
+      <AllVouchers/>
+      <InlineNavigation/>
+      <AllItems/>
+    </div>
   </Router>
   );
 }

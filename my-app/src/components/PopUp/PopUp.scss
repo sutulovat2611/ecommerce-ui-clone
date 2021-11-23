@@ -1,14 +1,20 @@
+$primary-color: white;
+$secondary-color: #7b1dfe;
+$sale-color: #fc3c3d;
+$disabled-grey: #aaaaaa;
+
 .popup{
     position:fixed;
     top:0;
     left:0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0,0,0,0.2);
 
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .popup-inner {
@@ -17,6 +23,11 @@
     width:100%;
     max-width: 640px;
     background-color: white;
+    border-radius: 20px;
+    height: 70%;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .popup-inner .close-btn{
@@ -24,3 +35,193 @@
     top: 16px;
     right: 16px;
 }
+
+.photo-gallery{
+    width: 60%; 
+    float: left;
+    background-color: rgb(243, 243, 243);
+}
+
+.details{
+    width: 40%;
+    float: right;
+}
+
+  .sale_number{
+    position: sticky;
+    bottom:76%;
+    left: 10%;
+    display:inline-block;
+    
+
+    background-color: $sale-color;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 150%;  
+    color: $primary-color;
+    border-radius: 12px;
+  }
+
+
+  .sale-rate button.star{
+    position: relative;
+    left: 5%;
+    display:inline-block;
+
+    font-size: 15px;
+    background-color: transparent;
+    color: $disabled-grey;
+    border: none;
+  }
+
+  .title{
+      font-weight: bold;
+      font-size: 17px;
+      position: relative;
+      top:10px;
+  }
+
+    
+  .new_price{
+    display:inline-block;
+    color: $sale-color;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+   .old_price{
+    display:inline-block;
+    color:$disabled-grey;
+    font-size: 12px;
+    position: relative;
+    left: 2%;
+  }
+
+  .color p{
+    font-weight: bold;
+    color: $disabled-grey;
+    }
+
+
+   /* Hide the browser's default radio button */
+   .container_color input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark_color {
+    display:inline-block;
+    margin-right: 15px;
+    height: 28px;
+    width: 28px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container_color:hover input ~ .checkmark_color {
+    filter: brightness(50%);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container_color input:checked ~ .checkmark_color {
+    border:1px solid $disabled-grey;
+  }
+
+  .color{
+    display:inline-block;
+  }
+
+
+
+
+  .size p{
+    font-weight: bold;
+    color: $disabled-grey;
+    }
+
+  /* Hide the browser's default radio button */
+  .container_size input {
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark_size {
+    display:inline-block;
+    margin-left: -20px;
+    margin-right: 10px;
+    height: 28px;
+    width: 28px;
+    background-color: transparent;
+    border:2px solid rgb(153, 152, 152);
+    border-radius: 50%;
+    color: rgb(153, 152, 152);
+    line-height: 28px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container_size:hover input ~ .checkmark_size {
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container_size input:checked ~ .checkmark_size {
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+  .size .size-guide-ttl{
+      color: black;
+      position: relative;
+      bottom: 8px;
+      font-size: 14px;
+  }
+
+  /* BUTTONS*/
+  .btn_fav {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0.2, 0.2);
+    text-align: center;
+    line-height: 50%;  
+  }
+  
+  .btn_fav:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  .btn_add, .btn_buy{
+    height: 38px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 5px;
+  }
+
+  .btn_add{
+      border-color: $secondary-color;
+      color: $secondary-color;
+      width: 45%;
+      font-weight: bold;
+      background-color: $primary-color;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  .btn_buy{
+    color: $primary-color;
+    width: 35%;
+    background-color:  $secondary-color;
+    border:none;
+  }

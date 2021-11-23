@@ -59,9 +59,8 @@ function Item(props) {
           </div>
         </div>
 
-        <PopUp trigger={buttonPopUp} setTrigger={setButtonPopUp}>
-          <h3>My popup</h3>
-          <p>This is my button triggered popup</p>
+        <PopUp trigger={buttonPopUp} setTrigger={setButtonPopUp} data={props}>
+
         </PopUp>
       </div>
     </ItemCard>
