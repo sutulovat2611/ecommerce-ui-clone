@@ -64,7 +64,6 @@ const Gallery = () => {
     <AliceCarousel 
     mouseTracking 
     items={items} 
-    // autoHeight= {true}
     autoWidth= {true}
     />
   );
