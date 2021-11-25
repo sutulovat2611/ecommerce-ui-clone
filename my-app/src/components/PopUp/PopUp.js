@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import "./PopUp.scss";
 import { BsHeart, BsStar } from "react-icons/bs";
 import QuantityPicker from "./QuantityPicker";
+import MyGallery from "./Gallery";
+
 
 function PopUp(props) {
   let modelRef = useRef();
@@ -16,7 +18,7 @@ function PopUp(props) {
   return props.trigger ? (
     <div className="popup">
       <div ref={modelRef} className="popup-inner">
-        <div className="photo-gallery">{/* The gallery of pictures */}</div>
+        <div className="photo-gallery"><MyGallery/></div>
 
         <div className="details">
           <div className="sale-rate">
@@ -49,7 +51,10 @@ function PopUp(props) {
 
           {/* Color Choice */}
           <div className="color">
-            <p>Colors</p>
+            <span>Colors  </span> 
+            <span className="color-name">ColorName</span>
+            <br/>
+            <br/>
             {props.data.colors.map((color) => (
               <label className="container_color">
                 <input type="radio" name="color" />
@@ -61,7 +66,7 @@ function PopUp(props) {
             ))}
           </div>
 
-          {/* SIze Choice */}
+          {/* Size Choice */}
           <div className="size">
             <p>Size</p>
             {props.data.sizes.map((size) => (

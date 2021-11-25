@@ -38,8 +38,14 @@ $disabled-grey: #aaaaaa;
 
 .photo-gallery{
     width: 60%; 
-    float: left;
-    background-color: rgb(243, 243, 243);
+    float: left;  
+    position: relative;
+    right:15px;
+}
+
+
+.image-gallery-left-nav{
+  font-size: 1px;
 }
 
 .details{
@@ -118,11 +124,14 @@ $disabled-grey: #aaaaaa;
     position: relative;
     bottom: 15px;
   }
-  .color p, .size p, .quantity p{
+  .color span, .size p, .quantity p{
     font-weight: bold;
     color: $disabled-grey;
     }
-
+  .color .color-name{
+    color: black;
+    font-weight:normal;
+  }
 
    /* Hide the browser's default radio button */
    .container_color input {

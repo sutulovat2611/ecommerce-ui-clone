@@ -1,0 +1,25 @@
+$secondary-color: #7b1dfe;
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;    
+    text-align: center;
+}
+#clockdiv > div{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: $secondary-color;
+    display: inline-block;
+    margin:5px;
+}
+#clockdiv > span{
+    width: 10px;
+    height: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background: $secondary-color;
+}

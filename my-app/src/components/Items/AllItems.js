@@ -1,7 +1,7 @@
 import ItemList from "./ItemList";
-import "./AllItems.css";
-/* Icons */
-import { BsLightningCharge } from "react-icons/bs";
+import "./AllItems.scss";
+import SaleTitle from "./SaleTitle";
+
 
 const DUMMY_DATA = [
   {
@@ -16,7 +16,7 @@ const DUMMY_DATA = [
     sizes: ["S", "M", "L"],
     rating: 4.2,
     sku: "00116c-23",
-    brand_name: "Brandname"
+    brand_name: "Brandname",
   },
 
   {
@@ -31,7 +31,7 @@ const DUMMY_DATA = [
     sizes: ["S", "M", "L"],
     rating: 4.3,
     sku: "00116c-23",
-    brand_name: "Brandname"
+    brand_name: "Brandname",
   },
   {
     id: "m2",
@@ -45,7 +45,7 @@ const DUMMY_DATA = [
     sizes: ["S", "M", "L"],
     rating: 4.1,
     sku: "00116c-23",
-    brand_name: "Brandname"
+    brand_name: "Brandname",
   },
   {
     id: "m2",
@@ -60,7 +60,7 @@ const DUMMY_DATA = [
     sizes: ["S", "M", "L"],
     rating: 4.9,
     sku: "00116c-23",
-    brand_name: "Brandname"
+    brand_name: "Brandname",
   },
   {
     id: "m2",
@@ -74,7 +74,7 @@ const DUMMY_DATA = [
     sizes: ["S", "M", "L"],
     rating: 4.4,
     sku: "00116c-23",
-    brand_name: "Brandname"
+    brand_name: "Brandname",
   },
   {
     id: "m2",
@@ -88,7 +88,7 @@ const DUMMY_DATA = [
     sizes: ["S", "M", "L"],
     rating: 2.4,
     sku: "00116c-23",
-    brand_name: "Brandname"
+    brand_name: "Brandname",
   },
   {
     id: "m2",
@@ -102,7 +102,7 @@ const DUMMY_DATA = [
     sizes: ["S", "M", "L"],
     rating: 4.2,
     sku: "00116c-23",
-    brand_name: "Brandname"
+    brand_name: "Brandname",
   },
   {
     id: "m2",
@@ -116,17 +116,14 @@ const DUMMY_DATA = [
     sizes: ["S", "M", "L"],
     rating: 4.2,
     sku: "00116c-23",
-    brand_name: "Brandname"
-  }
+    brand_name: "Brandname",
+  },
 ];
 
 function AllItems() {
   return (
     <section>
-      <h1 className="header">
-        <BsLightningCharge />
-        Flash Sale
-      </h1>
+      <SaleTitle className="header" />
       <ItemList items={DUMMY_DATA} />
     </section>
   );
