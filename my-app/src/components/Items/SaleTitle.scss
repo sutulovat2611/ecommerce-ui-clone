@@ -1,8 +1,8 @@
-.header, .count-down{
-    display: inline-block;
+.header {
+	display: inline-block;
+	position: relative;
+	right: 20px;
 }
-
-.header{
-    position: relative;
-    right:20px
+.count-down {
+	display: inline-block;
 }

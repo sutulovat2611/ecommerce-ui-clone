@@ -1,5 +1,7 @@
-/* React inbuilt */
+/* Imporing from react */
 import React, { useState } from "react";
+
+/*Importing from the external libraries*/
 import { Link } from "react-router-dom";
 
 /* Importing the scss file for styling */

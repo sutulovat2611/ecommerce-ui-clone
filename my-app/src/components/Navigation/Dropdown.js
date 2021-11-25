@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import { MenuItems } from './MenuItems';
+/* Importing from react */
+import React, { useState } from "react";
+/* Importing other components */
+import { MenuItems } from "./MenuItems";
 /* Importing the scss file for styling */
-import './Dropdown.scss';
+import "./Dropdown.scss";
 
 function Dropdown() {
   const [click, setClick] = useState(false);
@@ -12,14 +14,12 @@ function Dropdown() {
     <>
       <ul
         onClick={handleClick}
-        className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
+        className={click ? "dropdown-menu clicked" : "dropdown-menu"}
       >
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-                <div>
-                {item.title}
-                </div>
+              <div>{item.title}</div>
             </li>
           );
         })}

@@ -1,13 +1,9 @@
-import React from 'react';
+/* Importing from react */
+import React from "react";
 /* Importing the scss file for styling */
-import "./SearchBar.scss"
+import "./SearchBar.scss";
 
-function SearchBar (){
-    return (
-        <input 
-        className="search-bar"
-        />
-    );
+function SearchBar() {
+  return <input className="search-bar" />;
 }
-export default SearchBar
-
+export default SearchBar;
