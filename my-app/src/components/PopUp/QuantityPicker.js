@@ -1,3 +1,4 @@
+/* Importing from react */
 import React, { Component } from "react";
 /* Importing the scss file for styling */
 import "./QuantityPicker.scss";
@@ -45,6 +46,7 @@ export default class QuantityPicker extends Component {
 
     return (
       <div>
+        {/* Output window */}
         <span className="quantity-picker">
           <input
             className="quantity-display"
@@ -54,6 +56,7 @@ export default class QuantityPicker extends Component {
           />
         </span>
 
+        {/* Left button (decrement) */}
         <button
           className={`${
             disableDec ? "mod-disable " : ""
@@ -62,7 +65,8 @@ export default class QuantityPicker extends Component {
         >
           &ndash;
         </button>
-        
+
+        {/* Right button (decrement) */}
         <button
           className={`${
             disableInc ? "mod-disable " : ""

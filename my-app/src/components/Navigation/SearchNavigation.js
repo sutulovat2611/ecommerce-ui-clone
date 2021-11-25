@@ -1,7 +1,7 @@
 /* React inbuilt */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 /* Icons */
 import { BsHeart, BsPerson, BsBag, BsSearch } from "react-icons/bs";
@@ -17,14 +17,20 @@ function SearchNavigation() {
   const [click] = useState(false);
   return (
     <nav className="search-navbar navbar">
+      {/* Title */}
       <div className="logo">
-        <h2>Blizoo.</h2> 
+        <h2>Blizoo.</h2>
       </div>
+      {/* Search Bar */}
       <div className="search-bar-div">
         <BsSearch />
         <SearchBar />
       </div>
-      <ul className={click ? "search-nav-menu nav-menu active" : "search-nav-menu nav-menu"}>
+      <ul
+        className={
+          click ? "search-nav-menu nav-menu active" : "search-nav-menu nav-menu"
+        }
+      >
         <li className="nav-item">
           <Link to="/mans" className="nav-links">
             Man's

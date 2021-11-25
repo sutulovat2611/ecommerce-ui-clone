@@ -1,11 +1,15 @@
+/* Importing from react */
 import React, { useEffect, useRef } from "react";
-/* Importing the scss file for styling */
-import "./PopUp.scss";
+
+/*Importing from the external libraries*/
 import { BsHeart, BsStar } from "react-icons/bs";
+
+/* Importing other components */
 import QuantityPicker from "./QuantityPicker";
 import MyGallery from "./Gallery";
 
-
+/* Importing the scss file for styling */
+import "./PopUp.scss";
 
 function PopUp(props) {
   let modelRef = useRef();
@@ -20,9 +24,13 @@ function PopUp(props) {
   return props.trigger ? (
     <div className="popup">
       <div ref={modelRef} className="popup-inner">
-        <div className="photo-gallery"><MyGallery/></div>
+        {/* The pictures gallery */}
+        <div className="photo-gallery">
+          <MyGallery />
+        </div>
 
         <div className="details">
+          {/* Sale and rate */}
           <div className="sale-rate">
             <div className="sale_number">-{props.data.sale}%</div>
             <button className="star">
@@ -35,10 +43,10 @@ function PopUp(props) {
 
           {/* Detailed info*/}
           <div className="sku-brand">
-            <span className="inbuilt sku">SKU:  </span>
+            <span className="inbuilt sku">SKU: </span>
             <span className="given-sku">{props.data.sku}</span>
             <br />
-            <span className="inbuilt brand">Brand:  </span>
+            <span className="inbuilt brand">Brand: </span>
             <span className="given-brand">{props.data.brand_name}</span>
           </div>
 
@@ -53,10 +61,10 @@ function PopUp(props) {
 
           {/* Color Choice */}
           <div className="color">
-            <span>Colors  </span> 
+            <span>Colors </span>
             <span className="color-name">ColorName</span>
-            <br/>
-            <br/>
+            <br />
+            <br />
             {props.data.colors.map((color) => (
               <label className="container_color">
                 <input type="radio" name="color" />

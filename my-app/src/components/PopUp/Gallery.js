@@ -1,8 +1,13 @@
-import React, { useEffect, useRef } from "react";
-import ImageGallery from "react-image-gallery";
 /* Importing the scss file for styling */
 import "./Gallery.scss";
 
+/* Imporing from react */
+import React from "react";
+
+/* Importing from external libraries */
+import ImageGallery from "react-image-gallery";
+
+/* Importing pictures */
 import pic1 from "./Pictures/pic1.jpg";
 import pic2 from "./Pictures/pic2.jpg";
 import pic3 from "./Pictures/pic3.jpg";
