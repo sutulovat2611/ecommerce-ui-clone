@@ -3,64 +3,66 @@ $secondary-color: #7b1dfe;
 $sale-color: #fc3c3d;
 $disabled-grey: #aaaaaa;
 
-  .item{
-    position: relative;
-    height: 500px;
-  }
+/* General for the item*/
+.item {
+  position: relative;
+  height: 500px;
+}
 
-  .image {
-    overflow: hidden;
+/* Image*/
+.image {
+  height: 60%;
+	overflow: hidden;
+	border-radius: 20px;
+	img {
+		width: 100%;
+		object-fit: fill;
     border-radius: 20px;
-  }
-  
-  .image img {
-    width: 100%;
-    object-fit: cover;
-  }
- 
-  .btn_fav {
-    // location
-    position: sticky;
-    bottom:76%;
-    left: 78%;
-  
-    //color
-    background-color: $primary-color;
-    color: $secondary-color;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    width: 37px;
-    height: 37px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    line-height: 50%;  
-  }
-  
-  .btn_fav:hover {
-    background-color: $secondary-color;
-    color: $primary-color;
-  }
-  
-  .sale_number{
-    position: sticky;
-    bottom:76%;
-    left: 10%;
-    background-color: $sale-color;
-    width: 60px;
-    height: 30px;
-    text-align: center;
-    line-height: 150%;  
-    color: $primary-color;
-    border-radius: 10px;
-  }
+	}
+}
 
+/* Buttons on the picture*/
+.btn_fav {
+	position: sticky;
+	bottom: 76%;
+	left: 78%;
+	background-color: $primary-color;
+	color: $secondary-color;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 37px;
+	height: 37px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	line-height: 50%;
+	&:hover {
+		background-color: $secondary-color;
+		color: $primary-color;
+	}
+}
+
+.sale_number {
+  position: sticky;
+  bottom: 76%;
+  left: 10%;
+  background-color: $sale-color;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 150%;
+  color: $primary-color;
+  border-radius: 10px;
+}
+
+/*General for content*/
   .content{
     height:600px;
   }
 
-  .title{
+  /* Details*/
+  .title {
     font-size: 20px;
     color: #2c292b;
     word-wrap: break-word;
@@ -68,50 +70,51 @@ $disabled-grey: #aaaaaa;
     position: relative;
     left: 5%;
     vertical-align: top;
-    display:inline-block;
+    display: inline-block;
   }
-
-  .prices{
-    display:inline-block;
+  
+  .prices {
+    display: inline-block;
     position: relative;
     left: 10%;
     text-align: right;
   }
   
-  .new_price{
+  .new_price {
     color: $sale-color;
     font-weight: bold;
     font-size: 20px;
   }
-
-   .old_price{
-    color:$disabled-grey;
+  
+  .old_price {
+    color: $disabled-grey;
     position: relative;
     bottom: 20px;
   }
+  
 
-
-  .choice{
-    position:  absolute;
+  /* Radio Buttons */
+  .choice {
+    position: absolute;
     left: 3%;
     bottom: 20%;
     display: inline;
   }
-  @media (min-width:1800px) { 
-    .choice{
+  @media (min-width:1800px) {
+    .choice {
       bottom: 17%;
-     
     }
-  } 
-
-  .color_choice, .size_choice{
-    display:inline-block;
   }
-
   
-  .size_choice{
+
+  .color_choice {
+    display: inline-block;
+  }
+  .size_choice {
+    display: inline-block;
     margin-left: 50px;
   }
+  
 
   .container_color {
     /* Hide the browser's default radio button */
@@ -119,7 +122,7 @@ $disabled-grey: #aaaaaa;
       position: absolute;
       opacity: 0;
       cursor: pointer;
-      /* When the radio button is checked, add a blue background */
+      /* When the radio button is checked, add a grey border */
       &:checked {
         ~ {
           /* Create a custom radio button */
@@ -129,7 +132,7 @@ $disabled-grey: #aaaaaa;
         }
       }
     }
-    /* On mouse-over, add a grey background color */
+    /* On mouse-over, dim the radio button */
     &:hover {
       input {
         ~ {
@@ -154,7 +157,7 @@ $disabled-grey: #aaaaaa;
     input {
       opacity: 0;
       cursor: pointer;
-      /* When the radio button is checked, add a blue background */
+      /* When the radio button is checked, change the text and border to purple */
       &:checked {
         ~ {
           .checkmark_size {
@@ -164,7 +167,7 @@ $disabled-grey: #aaaaaa;
         }
       }
     }
-    /* On mouse-over, add a grey background color */
+    /* On mouse-over,  change the text and border to purple */
     &:hover {
       input {
         ~ {
@@ -189,14 +192,10 @@ $disabled-grey: #aaaaaa;
     text-align: center;
   }
 
-
   /* Actions*/
   .actions {
-		position: absolute;
+    position: absolute;
 		bottom: 10%;
-	}
-
-  .actions {
     button {
       font: inherit;
       cursor: pointer;
