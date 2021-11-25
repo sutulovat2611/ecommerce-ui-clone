@@ -9,11 +9,11 @@ The following project is a front-end for the e-commerce platform, which is creat
 6. Code duplications are minimized
 
 ## To run the application
-		
 	$ cd my-app 
 	$ npm start
     
 ## Demo
+
 
 
 ## Credits
