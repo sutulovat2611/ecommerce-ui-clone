@@ -3,257 +3,288 @@ $secondary-color: #7b1dfe;
 $sale-color: #fc3c3d;
 $disabled-grey: #aaaaaa;
 
-.popup{
-    position:fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 750px;
-    background-color: rgba(0,0,0,0.2);
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+/*Pop Up general*/
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 750px;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
-
 .popup-inner {
-    position: relative;
-    padding: 32px;
-    width:100%;
-    max-width: 640px;
-    background-color: white;
-    border-radius: 20px;
-    height: 530px;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.popup-inner .close-btn{
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: white;
+  border-radius: 20px;
+  height: 530px;
+  display: flex;
+  flex-wrap: wrap;
+  .close-btn {
     position: absolute;
     top: 16px;
     right: 16px;
+  }
 }
 
-.photo-gallery{
-    width: 60%; 
-    float: left;  
-    position: relative;
-    right:15px;
+/* Gallery */
+.photo-gallery {
+  width: 60%;
+  float: left;
+  position: relative;
+  right: 15px;
 }
 
-
-.image-gallery-left-nav{
+.image-gallery-left-nav {
   font-size: 1px;
 }
 
-.details{
-    width: 40%;
-    float: right;
+/*Details general*/
+.details {
+  width: 40%;
+  float: right;
 }
 
-  .sale_number{
-    position: sticky;
-    bottom:76%;
-    left: 10%;
-    display:inline-block;
-    
+.sale_number {
+  position: sticky;
+  bottom: 76%;
+  left: 10%;
+  display: inline-block;
 
-    background-color: $sale-color;
-    width: 60px;
-    height: 30px;
-    text-align: center;
-    line-height: 150%;  
-    color: $primary-color;
-    border-radius: 12px;
-  }
+  background-color: $sale-color;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 150%;
+  color: $primary-color;
+  border-radius: 12px;
+}
 
-
-  .sale-rate button.star{
+/* Sale and rate component*/
+.sale-rate {
+  button.star {
     position: relative;
     left: 5%;
-    display:inline-block;
-
+    display: inline-block;
     font-size: 15px;
     background-color: transparent;
     color: $disabled-grey;
     border: none;
   }
+}
 
-  .title{
-      font-weight: bold;
-      font-size: 17px;
-      position: relative;
-      top:10px;
-  }
+.title {
+  font-weight: bold;
+  font-size: 17px;
+  position: relative;
+  top: 10px;
+}
 
-  .sku-brand{
-      font-size: 14px;
-      position: relative;
-      top:15px;
-  }
+/* Sku and Brand*/
+.sku-brand {
+  font-size: 14px;
+  position: relative;
+  top: 15px;
+}
+.inbuilt {
+  color: $disabled-grey;
+}
+.given-sku {
+  font-weight: bold;
+}
+.given-brand {
+  font-weight: bold;
+  color: $secondary-color;
+}
 
-  .inbuilt{
-      color: $disabled-grey;
-  }
-  .given-sku, .given-brand{
-      font-weight: bold;
-  }
-  .given-brand{
-      color: $secondary-color;
-  }
+/* Price */
+.new_price {
+  display: inline-block;
+  color: $sale-color;
+  font-weight: bold;
+  font-size: 25px;
+}
+.old_price {
+  display: inline-block;
+  color: $disabled-grey;
+  font-size: 12px;
+  position: relative;
+  left: 2%;
+}
 
-    
-  .new_price{
-    display:inline-block;
-    color: $sale-color;
-    font-weight: bold;
-    font-size: 25px;
-  }
-
-   .old_price{
-    display:inline-block;
-    color:$disabled-grey;
-    font-size: 12px;
-    position: relative;
-    left: 2%;
-  }
-
-  .color{
-    position: relative;
-    bottom: 15px;
-  }
-  .color span, .size p, .quantity p{
+/* Color */
+.color {
+  position: relative;
+  bottom: 15px;
+  display: inline-block;
+  span {
     font-weight: bold;
     color: $disabled-grey;
-    }
-  .color .color-name{
-    color: black;
-    font-weight:normal;
   }
+  .color-name {
+    color: black;
+    font-weight: normal;
+  }
+}
+.size {
+  p {
+    font-weight: bold;
+    color: $disabled-grey;
+  }
+}
+.quantity {
+  p {
+    font-weight: bold;
+    color: $disabled-grey;
+  }
+}
 
-   /* Hide the browser's default radio button */
-   .container_color input {
+/* Choice (radio buttons)*/
+.container_color {
+  input {
+    /* Hide the browser's default radio button */
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    /* When the radio button is checked, add a grey border */
+    &:checked {
+      ~ {
+        .checkmark_color {
+          border: 1px solid $disabled-grey;
+        }
+      }
+    }
   }
-  
-  /* Create a custom radio button */
-  .checkmark_color {
-    display:inline-block;
-    margin-right: 15px;
-    height: 28px;
-    width: 28px;
-    background-color: #eee;
-    border-radius: 50%;
+  /* On mouse-over, make the checkbox darker*/
+  &:hover {
+    input {
+      ~ {
+        .checkmark_color {
+          filter: brightness(50%);
+        }
+      }
+    }
   }
-  
-  /* On mouse-over, add a grey background color */
-  .container_color:hover input ~ .checkmark_color {
-    filter: brightness(50%);
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .container_color input:checked ~ .checkmark_color {
-    border:1px solid $disabled-grey;
-  }
-
-  .color{
-    display:inline-block;
-  }
-
-
-  /* Hide the browser's default radio button */
-  .container_size input {
+}
+/* Create a custom radio button */
+.checkmark_color {
+  display: inline-block;
+  margin-right: 15px;
+  height: 28px;
+  width: 28px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.container_size {
+  input {
+    /* Hide the browser's default radio button */
     opacity: 0;
     cursor: pointer;
+    /* When the radio button is checked,  make the text and border purple */
+    &:checked {
+      ~ {
+        .checkmark_size {
+          color: $secondary-color;
+          border-color: $secondary-color;
+        }
+      }
+    }
   }
-  
-  /* Create a custom radio button */
-  .checkmark_size {
-    display:inline-block;
-    margin-left: -20px;
-    margin-right: 10px;
-    height: 28px;
-    width: 28px;
-    background-color: transparent;
-    border:2px solid rgb(153, 152, 152);
-    border-radius: 50%;
-    color: rgb(153, 152, 152);
-    line-height: 28px;
-    text-align: center;
-    font-size: 15px;
+  /* On mouse-over, make the text and border purple*/
+  &:hover {
+    input {
+      ~ {
+        .checkmark_size {
+          color: $secondary-color;
+          border-color: $secondary-color;
+        }
+      }
+    }
   }
-  
-  /* On mouse-over, add a grey background color */
-  .container_size:hover input ~ .checkmark_size {
-    color: $secondary-color;
-    border-color: $secondary-color;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .container_size input:checked ~ .checkmark_size {
-    color: $secondary-color;
-    border-color: $secondary-color;
-  }
-
-  .size .size-guide-ttl{
-      color: black;
-      position: relative;
-      bottom: 8px;
-      font-size: 14px;
-  }
-
-
-
-  /* BUTTONS*/
-
-  .actions{
-      position: relative;
-      top: 10px;
-  }
-  .btn_fav {
-    background-color: $primary-color;
-    color: $secondary-color;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    width: 37px;
-    height: 37px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0.2, 0.1);
-    text-align: center;
-    line-height: 50%;  
+}
+/* Create a custom radio button */
+.checkmark_size {
+  display: inline-block;
+  margin-left: -20px;
+  margin-right: 10px;
+  height: 28px;
+  width: 28px;
+  background-color: transparent;
+  border: 2px solid rgb(153, 152, 152);
+  border-radius: 50%;
+  color: rgb(153, 152, 152);
+  line-height: 28px;
+  text-align: center;
+  font-size: 15px;
+}
+.size {
+  .size-guide-ttl {
+    color: black;
     position: relative;
-    top: 5px;
+    bottom: 8px;
+    font-size: 14px;
   }
-  
-  .btn_fav:hover {
+}
+
+/* BUTTONS*/
+.actions {
+  position: relative;
+  top: 10px;
+}
+.btn_fav {
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0.2, 0.1);
+  text-align: center;
+  line-height: 50%;
+  position: relative;
+  top: 5px;
+  &:hover {
     background-color: $secondary-color;
     color: $primary-color;
   }
-
-  .btn_add, .btn_buy{
-    height: 38px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    margin-left: 5px;
+}
+.btn_add {
+  height: 38px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+  border-color: $secondary-color;
+  color: $secondary-color;
+  width: 45%;
+  font-weight: bold;
+  background-color: $primary-color;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
   }
-
-  .btn_add{
-      border-color: $secondary-color;
-      color: $secondary-color;
-      width: 45%;
-      font-weight: bold;
-      background-color: $primary-color;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.btn_buy {
+  height: 38px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+  color: $primary-color;
+  width: 35%;
+  background-color: $secondary-color;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    border: solid 2px $secondary-color;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
   }
-  .btn_buy{
-    color: $primary-color;
-    width: 35%;
-    background-color:  $secondary-color;
-    border:none;
-  }
+}

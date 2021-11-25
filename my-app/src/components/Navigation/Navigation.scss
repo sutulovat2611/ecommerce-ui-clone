@@ -1,48 +1,36 @@
 $primary-color: white;
 $secondary-color: #7b1dfe;
 
-
 .navbar {
-    background: $primary-color;
-    display: flex;
-    align-items: center; /* vertical alignment */
-  }
-  
-  .nav-menu {
-    display: grid;
-    list-style: none;
-    text-align: center; /* vertical alignment */
-  }
-  
-  .nav-item {
-    display: flex;
-    align-items: center;
-    height: 80px;
-  }
-  
-  .nav-links {
-    color: black;
-    text-decoration: none;
-    padding: 0.5rem ;
-  }
-  
-  .nav-links:hover {
-    color: $secondary-color;
-    transition: all 0.2s ease-out;
-  }
-  
-  .fa-bars {
-    color: $primary-color;
-  }
-  
-  .nav-links-mobile {
-    display: none;
-  }
-  
-  .menu-icon {
-    display: none;
-  }
-  
-  
-
-  
+	background: $primary-color;
+	display: flex;
+	align-items: center;
+}
+.nav-menu {
+	display: grid;
+	list-style: none;
+	text-align: center;
+}
+.nav-item {
+	display: flex;
+	align-items: center;
+	height: 80px;
+}
+.nav-links {
+	color: black;
+	text-decoration: none;
+	padding: 0.5rem;
+	&:hover {
+		color: $secondary-color;
+		transition: all 0.2s ease-out;
+	}
+}
+.fa-bars {
+	color: $primary-color;
+}
+.nav-links-mobile {
+	display: none;
+}
+.menu-icon {
+	display: none;
+}

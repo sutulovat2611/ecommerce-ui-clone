@@ -1,17 +1,16 @@
 .ct-navbar {
-    height: 30px;
-    font-size: 1.07rem;
-    background-color: white;
-  }
-  
-  .ct-nav-menu { 
-    grid-template-columns: repeat(10, auto);
-    grid-gap: 10px;
-    width: 1000px;
-    justify-content: center;
-  }
-  
-  .nav-item {
-    height: 25px;
-  }
-  
+  height: 30px;
+  font-size: 1.07rem;
+  background-color: white;
+}
+
+.ct-nav-menu {
+  grid-template-columns: repeat(10, auto);
+  grid-gap: 10px;
+  width: 1000px;
+  justify-content: center;
+}
+
+.nav-item {
+  height: 25px;
+}

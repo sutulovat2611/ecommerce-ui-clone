@@ -1,9 +1,11 @@
+/* Importing other components */
 import VoucherList from "./VoucherList";
+
 /* Importing the scss file for styling */
 import classes from "./AllVouchers.module.scss";
 
 
-const DUMMY_DATA = [
+const data = [
   {
     title: "Happy Monday",
     hashtag: "MONHPY",
@@ -26,13 +28,15 @@ const DUMMY_DATA = [
   },
 ];
 
+window.localStorage.setItem('vouchers_data', JSON.stringify(data));
+
 function AllVouchers() {
   return (
     <section>
       <h1 className={classes.header}>
           More Voucher
       </h1>
-      <VoucherList vouchers={DUMMY_DATA} />
+      <VoucherList vouchers={JSON.parse(window.localStorage.getItem('vouchers_data'))} />
     </section>
   );
 }

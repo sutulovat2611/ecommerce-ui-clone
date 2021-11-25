@@ -1,12 +1,15 @@
-/* Importing the scss file for styling */
-import classes from "./Item.module.scss";
-import ItemCard from "../../UI/ItemCard";
-/* Icons */
+/* Importing from react */
+import { useState } from "react";
+
+/*Importing from the external libraries*/
 import { BsHeart, BsStar } from "react-icons/bs";
 
+/* Importing other components */
+import ItemCard from "../../UI/ItemCard";
 import PopUp from "../PopUp/PopUp";
 
-import { useState } from "react";
+/* Importing the scss file for styling */
+import classes from "./Item.module.scss";
 
 function Item(props) {
   const [buttonPopUp, setButtonPopUp] = useState(false);
@@ -14,6 +17,7 @@ function Item(props) {
   return (
     <ItemCard>
       <div className={classes.item}>
+        {/* Image of the card */}
         <div className={classes.image}>
           <img
             src={props.image}
@@ -26,7 +30,9 @@ function Item(props) {
             <BsHeart />
           </button>
         </div>
+        {/* Content */}
         <div className={classes.content}>
+          {/* Description: Title and price */}
           <div className={classes.descr}>
             <h2 className={classes.title} onClick={() => setButtonPopUp(true)}>
               {props.title}
@@ -36,7 +42,9 @@ function Item(props) {
               <p className={classes.old_price}>$ {props.old_price}</p>
             </div>
           </div>
+          {/* Radio Buttons: options */}
           <div className={classes.choice}>
+            {/* Radio Buttons for color */}
             <div className={classes.color_choice}>
               {props.colors.map((color) => (
                 <label className={classes.container_color}>
@@ -48,6 +56,7 @@ function Item(props) {
                 </label>
               ))}
             </div>
+            {/* Radio Buttons for size */}
             <div className={classes.size_choice}>
               {props.sizes.map((size) => (
                 <label className={classes.container_size}>
@@ -57,10 +66,13 @@ function Item(props) {
               ))}
             </div>
           </div>
+          {/* Buttons */}
           <div className={classes.actions}>
+            {/* Rate button */}
             <button className={classes.star}>
               <BsStar /> {props.rating}
             </button>
+            {/* Buy button */}
             <button
               className={classes.buy_btn}
               onClick={() => setButtonPopUp(true)}
@@ -70,6 +82,7 @@ function Item(props) {
           </div>
         </div>
 
+        {/* Pop-up which appears onclick on any card */}
         <PopUp
           trigger={buttonPopUp}
           setTrigger={setButtonPopUp}

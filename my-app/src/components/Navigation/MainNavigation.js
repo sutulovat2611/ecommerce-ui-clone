@@ -1,8 +1,10 @@
-/* React inbuilt */
+/* Importing from react */
 import React, { useState } from "react";
+
+/*Importing from the external libraries*/
 import { Link } from "react-router-dom";
 
-/* Refer to other components */
+/* Importing other components */
 import Dropdown from "./Dropdown";
 
 /* Importing the scss file for styling */
@@ -13,6 +15,7 @@ function MainNavigation() {
   const [click] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
+  // Dropdown on hover
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -20,7 +23,8 @@ function MainNavigation() {
       setDropdown(true);
     }
   };
-
+  
+  // Dropdown once done hovering
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -55,6 +59,7 @@ function MainNavigation() {
             </Link>
           </li>
 
+          {/* Dropdown languages */}
           <li
             className="nav-item"
             onMouseEnter={onMouseEnter}
