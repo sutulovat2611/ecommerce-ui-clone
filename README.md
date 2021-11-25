@@ -14,6 +14,7 @@ The following project is a front-end for the e-commerce platform, which is creat
     
 ## Demo
 
+https://user-images.githubusercontent.com/91307462/143496099-5c8a0a3e-0309-4c03-ab91-afad3d9b4606.mp4
 
 
 ## Credits
