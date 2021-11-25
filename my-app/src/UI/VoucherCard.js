@@ -1,4 +1,5 @@
-import classes from './VoucherCard.module.css';
+/* Importing the scss file for styling */
+import classes from './VoucherCard.module.scss';
 
 function VoucherCard(props){
     return (

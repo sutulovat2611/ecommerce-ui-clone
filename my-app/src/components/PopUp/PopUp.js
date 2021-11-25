@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from "react";
+/* Importing the scss file for styling */
 import "./PopUp.scss";
 import { BsHeart, BsStar } from "react-icons/bs";
 import QuantityPicker from "./QuantityPicker";
 import MyGallery from "./Gallery";
+
 
 
 function PopUp(props) {

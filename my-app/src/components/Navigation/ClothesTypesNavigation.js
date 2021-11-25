@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-/* CSS files*/
+/* Importing the scss file for styling */
 import "./ClothesTypesNavigation.scss";
 import "./Navigation.scss";
 

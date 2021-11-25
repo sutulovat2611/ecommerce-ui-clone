@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+/* Importing the scss file for styling */
 import "./QuantityPicker.scss";
 
 export default class QuantityPicker extends Component {

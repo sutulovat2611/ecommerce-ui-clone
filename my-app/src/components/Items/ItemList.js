@@ -1,4 +1,5 @@
-import classes from './ItemList.module.css';
+/* Importing the scss file for styling */
+import classes from './ItemList.module.scss';
 import Item from './Item';
 import {Grid} from '@mui/material';
 

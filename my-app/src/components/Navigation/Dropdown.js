@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MenuItems } from './MenuItems';
-import './Dropdown.css';
+/* Importing the scss file for styling */
+import './Dropdown.scss';
 
 function Dropdown() {
   const [click, setClick] = useState(false);

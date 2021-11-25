@@ -1,10 +1,10 @@
+/* Importing the required react components */
 import React, { Component } from "react";
-// import cn from 'classnames/bind'
+/* Importing the scss file for styling */
 import "./CountDownElement.scss";
 
-//const cx = cn.bind(styles)
-
 class CountDown extends Component {
+  // Initialization
   constructor(props) {
     super(props);
     this.count = this.count.bind(this);
@@ -18,6 +18,7 @@ class CountDown extends Component {
     this.x = null;
     this.deadline = null;
   }
+  // Calculating the remaining time
   count() {
     var now = new Date().getTime();
     var t = this.deadline - now;
@@ -37,12 +38,14 @@ class CountDown extends Component {
       });
     }
   }
+  //finding the current date
   componentDidMount() {
-    this.deadline = new Date("dec 01, 2021 21:00:00").getTime();
+    this.deadline = new Date("dec 31, 2021 21:00:00").getTime();
 
     this.x = setInterval(this.count, 1000);
   }
 
+  //printing the result to the screen
   render() {
     const { days, seconds, hours, minutes } = this.state;
     return (

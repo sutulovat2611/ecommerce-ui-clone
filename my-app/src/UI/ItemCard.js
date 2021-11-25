@@ -1,4 +1,5 @@
-import classes from './ItemCard.module.css';
+/* Importing the scss file for styling */
+import classes from './ItemCard.module.scss';
 
 function ItemCard(props){
     return (

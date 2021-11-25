@@ -1,5 +1,6 @@
 import React from 'react';
-import "./SearchBar.css"
+/* Importing the scss file for styling */
+import "./SearchBar.scss"
 
 function SearchBar (){
     return (

@@ -1,4 +1,5 @@
 import VoucherList from "./VoucherList";
+/* Importing the scss file for styling */
 import classes from "./AllVouchers.module.scss";
 
 

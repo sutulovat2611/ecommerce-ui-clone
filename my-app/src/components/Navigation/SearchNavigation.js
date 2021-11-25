@@ -9,7 +9,7 @@ import { BsHeart, BsPerson, BsBag, BsSearch } from "react-icons/bs";
 /* Refer to other components */
 import SearchBar from "./SearchBar";
 
-/* CSS files*/
+//* Importing the scss file for styling */
 import "./Navigation.scss";
 import "./SearchNavigation.scss";
 

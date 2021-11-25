@@ -1,6 +1,9 @@
+/* Importing other components */
 import ItemList from "./ItemList";
-import "./AllItems.scss";
 import SaleTitle from "./SaleTitle";
+/* Importing the scss file for styling */
+import "./AllItems.scss";
+
 
 
 const DUMMY_DATA = [

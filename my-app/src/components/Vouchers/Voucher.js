@@ -1,4 +1,6 @@
+/* Importing the scss file for styling */
 import classes from "./Voucher.module.scss";
+
 import VoucherCard from "../../UI/VoucherCard";
 
 function Voucher(props) {

@@ -1,4 +1,5 @@
-import classes from './VoucherList.module.css';
+/* Importing the scss file for styling */
+import classes from './VoucherList.module.scss';
 import Voucher from './Voucher';
 
 import {Grid} from '@mui/material';

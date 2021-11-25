@@ -1,3 +1,4 @@
+/* Importing the scss file for styling */
 import classes from "./Item.module.scss";
 import ItemCard from "../../UI/ItemCard";
 /* Icons */

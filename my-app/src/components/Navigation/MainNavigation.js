@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 /* Refer to other components */
 import Dropdown from "./Dropdown";
 
-/* CSS files*/
+/* Importing the scss file for styling */
 import "./MainNavigation.scss";
 import "./Navigation.scss";
 

@@ -1,6 +1,7 @@
 /* Icons */
 import { BsLightningCharge } from "react-icons/bs";
 import CountDown from "./CountDownElement";
+/* Importing the scss file for styling */
 import "./SaleTitle.scss";
 
 function SaleTitle() {

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ImageGallery from "react-image-gallery";
+/* Importing the scss file for styling */
 import "./Gallery.scss";
 
 import pic1 from "./Pictures/pic1.jpg";
