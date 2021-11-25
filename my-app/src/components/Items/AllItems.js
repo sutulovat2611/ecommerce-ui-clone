@@ -126,7 +126,6 @@ const DUMMY_DATA = [
 function AllItems() {
   return (
     <section>
-      <SaleTitle className="header" />
       <ItemList items={DUMMY_DATA} />
     </section>
   );

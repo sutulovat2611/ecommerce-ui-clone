@@ -94,8 +94,15 @@ $disabled-grey: #aaaaaa;
   .choice{
     position:  absolute;
     left: 3%;
+    bottom: 20%;
     display: inline;
   }
+  @media (min-width:1800px) { 
+    .choice{
+      bottom: 17%;
+     
+    }
+  } 
 
   .color_choice, .size_choice{
     display:inline-block;

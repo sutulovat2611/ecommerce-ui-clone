@@ -15,7 +15,11 @@ function Item(props) {
     <ItemCard>
       <div className={classes.item}>
         <div className={classes.image}>
-          <img src={props.image} alt={props.title} onClick={() => setButtonPopUp(true)} />
+          <img
+            src={props.image}
+            alt={props.title}
+            onClick={() => setButtonPopUp(true)}
+          />
           <div className={classes.sale_number}>-{props.sale}%</div>
           <button class={classes.btn_fav}>
             {" "}
@@ -24,7 +28,9 @@ function Item(props) {
         </div>
         <div className={classes.content}>
           <div className={classes.descr}>
-            <h2 className={classes.title} onClick={() => setButtonPopUp(true)}>{props.title}</h2>
+            <h2 className={classes.title} onClick={() => setButtonPopUp(true)}>
+              {props.title}
+            </h2>
             <div className={classes.prices}>
               <p className={classes.new_price}>$ {props.new_price}</p>
               <p className={classes.old_price}>$ {props.old_price}</p>
@@ -42,7 +48,6 @@ function Item(props) {
                 </label>
               ))}
             </div>
-
             <div className={classes.size_choice}>
               {props.sizes.map((size) => (
                 <label className={classes.container_size}>
@@ -56,13 +61,20 @@ function Item(props) {
             <button className={classes.star}>
               <BsStar /> {props.rating}
             </button>
-            <button className={classes.buy_btn} onClick={() => setButtonPopUp(true)}>BUY +</button>
+            <button
+              className={classes.buy_btn}
+              onClick={() => setButtonPopUp(true)}
+            >
+              BUY +
+            </button>
           </div>
         </div>
 
-        <PopUp trigger={buttonPopUp} setTrigger={setButtonPopUp} data={props}>
-
-        </PopUp>
+        <PopUp
+          trigger={buttonPopUp}
+          setTrigger={setButtonPopUp}
+          data={props}
+        ></PopUp>
       </div>
     </ItemCard>
   );
